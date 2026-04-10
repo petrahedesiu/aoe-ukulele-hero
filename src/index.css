@@ -53,3 +53,34 @@ button {
   60%  { opacity: 1; transform: scale(1); }
   100% { opacity: 0; transform: scale(1.4); }
 }
+
+@keyframes uh-particle {
+  0%   { transform: translate(0, 0) scale(1); opacity: 1; }
+  100% { transform: translate(var(--dx), var(--dy)) scale(0.3); opacity: 0; }
+}
+
+@keyframes uh-combo-flash {
+  0%   { opacity: 0; }
+  30%  { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes uh-combo-flash-text {
+  0%   { opacity: 0; transform: translate(-50%, -50%) scale(0.5); }
+  30%  { opacity: 1; transform: translate(-50%, -50%) scale(1.3); }
+  60%  { opacity: 1; transform: translate(-50%, -50%) scale(1); }
+  100% { opacity: 0; transform: translate(-50%, -50%) scale(1.6); }
+}
+
+@keyframes uh-gradient-shift {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes uh-grade-slam {
+  0%   { opacity: 0; transform: scale(3) rotate(-15deg); letter-spacing: 1em; }
+  60%  { opacity: 1; transform: scale(0.85) rotate(2deg); letter-spacing: 0; }
+  80%  { transform: scale(1.05) rotate(-1deg); }
+  100% { opacity: 1; transform: scale(1) rotate(0); letter-spacing: 0; }
+}

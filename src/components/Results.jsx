@@ -12,7 +12,7 @@ export default function Results({ song, stats, onReplay, onMenu }) {
         <div style={styles.songLabel}>{song.title.toUpperCase()}</div>
         <div style={styles.doneLabel}>COMPLETE</div>
 
-        <div style={{ ...styles.grade, color: grade.color, textShadow: `0 0 40px ${grade.color}` }}>
+        <div style={{ ...styles.grade, color: grade.color, textShadow: `0 0 40px ${grade.color}, 0 0 80px ${grade.color}, 0 0 120px ${grade.color}` }}>
           {grade.letter}
         </div>
 
@@ -104,6 +104,7 @@ const styles = {
     lineHeight: 1,
     marginTop: "0.5rem",
     fontStyle: "italic",
+    animation: "uh-grade-slam 1s cubic-bezier(.17,.67,.35,1.2) forwards",
   },
   scoreBig: {
     fontSize: "3rem",
