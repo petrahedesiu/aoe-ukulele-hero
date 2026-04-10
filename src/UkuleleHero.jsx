@@ -4,9 +4,9 @@ const BUTTONS = [
   {
     id: 0,
     label: "G",
-    color: "#f682f4",
+    color: "#FF4D6D",
     glow: "#FF4D6D",
-    shadow: "#8b007f",
+    shadow: "#8B0000",
     darkBg: "#2a0a0f",
     key: "a",
     emoji: "🌺",
@@ -14,9 +14,9 @@ const BUTTONS = [
   {
     id: 1,
     label: "C",
-    color: "#d5de57",
+    color: "#FFD700",
     glow: "#FFD700",
-    shadow: "#c8ac47",
+    shadow: "#7a6000",
     darkBg: "#2a2200",
     key: "s",
     emoji: "🌻",
@@ -24,9 +24,9 @@ const BUTTONS = [
   {
     id: 2,
     label: "E",
-    color: "#54e4e9",
+    color: "#00C896",
     glow: "#00C896",
-    shadow: "#24b8bb",
+    shadow: "#004d3a",
     darkBg: "#002a1e",
     key: "d",
     emoji: "🍀",
@@ -36,7 +36,7 @@ const BUTTONS = [
     label: "A",
     color: "#4D9EFF",
     glow: "#4D9EFF",
-    shadow: "#2d5bb1",
+    shadow: "#003a7a",
     darkBg: "#001a2a",
     key: "f",
     emoji: "🌊",
@@ -74,13 +74,13 @@ export default function UkuleleHero() {
 
       {/* Header */}
       <div style={styles.header}>
-        {/* <div style={styles.ukuIcon}>🪗</div> */}
+        <div style={styles.ukuIcon}>🪗</div>
         <h1 style={styles.title}>
           <span style={styles.titleUku}>Uku</span>
           <span style={styles.titleLele}>lele</span>
           <span style={styles.titleHero}> Hero</span>
         </h1>
-        <p style={styles.subtitle}>Press A S D F or the buttons on the ukulele!</p>
+        <p style={styles.subtitle}>Press A S D F or tap to strum!</p>
       </div>
 
       {/* Strings decoration */}
@@ -123,12 +123,12 @@ export default function UkuleleHero() {
               aria-label={`String ${b.label}`}
             >
               {/* Inner shine */}
-              {/* <div style={styles.btnShine} /> */}
+              <div style={styles.btnShine} />
 
               {/* Emoji */}
-              {/* <span style={{ ...styles.btnEmoji, fontSize: isPressed ? "2rem" : "1.6rem" }}>
+              <span style={{ ...styles.btnEmoji, fontSize: isPressed ? "2rem" : "1.6rem" }}>
                 {b.emoji}
-              </span> */}
+              </span>
 
               {/* Note label */}
               <span
@@ -176,7 +176,7 @@ export default function UkuleleHero() {
       </div>
 
       <p style={styles.footer}>
-        Create your own ukulele song!
+        🎵 4 strings · 4 colors · 1 song to rule them all
       </p>
     </div>
   );
@@ -222,11 +222,11 @@ const styles = {
     letterSpacing: "-0.02em",
   },
   titleUku: {
-    color: "#d35bbd",
+    color: "#FF4D6D",
     textShadow: "0 0 20px #FF4D6D88",
   },
   titleLele: {
-    color: "#fabcf4",
+    color: "#FFD700",
     textShadow: "0 0 20px #FFD70088",
   },
   titleHero: {
